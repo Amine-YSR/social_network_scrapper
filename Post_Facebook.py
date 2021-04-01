@@ -1,7 +1,7 @@
 from mongoengine import *
 
 class Post(Document):
-    met = {"collection":"Posts"}
+    met = {"collection":"Posts_Facebook"}
     _id = StringField(required=True)
     content = StringField(max_length=5000)
     comments = StringField(max_length=5000)
