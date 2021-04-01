@@ -24,7 +24,7 @@ class Instagram_posts(object):
         
     def Scrap(self):
         for idx, link in self.Posts_link.items():
-            driver = webdriver.Edge(executable_path=r'D:\Users\amine\Downloads\msedgedriver(1).exe')
+            driver = webdriver.Edge(executable_path=r'.\msedgedriver.exe')
             driver.get(link)
             soup = BeautifulSoup(driver.page_source)
             self.Posts[idx] = {}
